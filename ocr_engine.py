@@ -1,19 +1,18 @@
 import easyocr
 import numpy as np
 
-# English OCR reader
-reader = easyocr.Reader(['en'], gpu=False)
+reader = None
 
 
 def extract_text(image):
-    """
-    Extract text from prescription image.
-    """
 
-    # PIL image → NumPy array
+    global reader
+
+    if reader is None:
+        reader = easyocr.Reader(['en'], gpu=False)
+
     image_array = np.array(image)
 
-    # OCR
     results = reader.readtext(image_array)
 
     extracted_text = []
