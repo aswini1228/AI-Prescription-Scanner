@@ -1,5 +1,6 @@
 import streamlit as st
 from PIL import Image
+from ocr_engine import extract_text
 
 st.set_page_config(
     page_title="AI Prescription Scanner",
@@ -8,7 +9,9 @@ st.set_page_config(
 )
 
 st.title("💊 AI Prescription Scanner")
-st.write("Upload a doctor's prescription to extract the written information.")
+st.write(
+    "Upload a doctor's prescription to extract the written information."
+)
 
 st.divider()
 
@@ -22,17 +25,37 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
     st.subheader("📷 Uploaded Prescription")
-    st.image(image, caption="Prescription", use_container_width=True)
+    st.image(
+        image,
+        caption="Prescription",
+        use_container_width=True
+    )
 
     if st.button("🔍 Scan Prescription"):
 
-        st.info("OCR processing will be added next...")
+        with st.spinner("Reading prescription..."):
+
+            extracted_text = extract_text(image)
+
+        st.success("Prescription scanned successfully!")
 
         st.subheader("📄 Extracted Text")
-        st.write("OCR result will appear here.")
+
+        if extracted_text.strip():
+            st.text_area(
+                "OCR Result",
+                extracted_text,
+                height=250
+            )
+        else:
+            st.warning(
+                "No readable text found. Please upload a clearer image."
+            )
+
+        st.divider()
 
         st.subheader("💊 Medicine Information")
-        st.write("Medicine details will appear here.")
+        st.info("Medicine extraction will be added in the next step.")
 
         st.subheader("⏰ Medication Schedule")
-        st.write("Medication schedule will appear here.")
+        st.info("Morning / Afternoon / Night schedule will be added next.")
