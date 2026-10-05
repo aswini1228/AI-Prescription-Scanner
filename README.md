@@ -1,11 +1,11 @@
-AI-Powered Prescription Scanner & Medication Schedule Assistant
+**AI-Powered Prescription Scanner & Medication Schedule Assistant**
 
 An AI-powered Streamlit application that scans a doctor's prescription image using OCR, extracts readable prescription information, identifies medicine-related instructions, creates a medication schedule, and provides general supportive food and self-care guidance.
 
  Live Application
 
 Streamlit App:
-Add your existing Streamlit app link here.
+https://ai-prescription-scanner-ggrj7cun5md7p2ju4o6lrt.streamlit.app/
 
  Project Overview
 
