@@ -1,31 +1,31 @@
-💊 AI-Powered Prescription Scanner & Medication Schedule Assistant
+AI-Powered Prescription Scanner & Medication Schedule Assistant
 
 An AI-powered Streamlit application that scans a doctor's prescription image using OCR, extracts readable prescription information, identifies medicine-related instructions, creates a medication schedule, and provides general supportive food and self-care guidance.
 
-🚀 Live Application
+ Live Application
 
 Streamlit App:
 Add your existing Streamlit app link here.
 
-📌 Project Overview
+ Project Overview
 
 Reading handwritten prescriptions can sometimes be difficult. This project uses Optical Character Recognition (OCR) to extract readable text from a prescription image and organize the information into an easy-to-understand format.
 
 The application can:
 
-- 📸 Upload a prescription image
-- 🔍 Extract text using OCR
-- 💊 Identify possible medicine-related information
-- 📋 Extract dosage, frequency, duration, and food instructions when clearly available
-- ⏰ Create a morning/afternoon/night medication schedule
-- 🩺 Provide general supportive health information based on detected symptoms
-- 🥗 Suggest general supportive foods and fluids
-- 🛌 Provide basic self-care guidance
-- 📊 Generate a visual supportive food & care chart automatically
+-  Upload a prescription image
+-  Extract text using OCR
+-  Identify possible medicine-related information
+- Extract dosage, frequency, duration, and food instructions when clearly available
+-  Create a morning/afternoon/night medication schedule
+-  Provide general supportive health information based on detected symptoms
+-  Suggest general supportive foods and fluids
+-  Provide basic self-care guidance
+-  Generate a visual supportive food & care chart automatically
 
 ---
 
-🔄 Workflow
+ Workflow
 
 Doctor Prescription
         ↓
@@ -49,9 +49,9 @@ Visual PNG Chart
 
 ---
 
-✨ Features
+ Features
 
-1. 📸 Prescription Image Upload
+1.  Prescription Image Upload
 
 Users can upload a prescription in:
 
@@ -59,11 +59,11 @@ Users can upload a prescription in:
 - JPG
 - JPEG
 
-2. 🔍 OCR-Based Text Extraction
+2.  OCR-Based Text Extraction
 
 The application uses EasyOCR to extract readable text from the uploaded prescription.
 
-3. 💊 Medicine Information Extraction
+3.  Medicine Information Extraction
 
 The system attempts to identify:
 
@@ -73,18 +73,18 @@ The system attempts to identify:
 - Duration
 - Food instructions such as before/after food
 
-4. ⏰ Medication Schedule
+4.  Medication Schedule
 
 Based on clearly written prescription instructions, the application creates a schedule for:
 
 Time| Status
-🌅 Morning| ✅ / ❌
-☀️ Afternoon| ✅ / ❌
-🌙 Night| ✅ / ❌
+Morning| ✅ / ❌
+ Afternoon| ✅ / ❌
+ Night| ✅ / ❌
 
 The application does not change or invent dosage instructions.
 
-5. 🩺 General Health Guidance
+5.  General Health Guidance
 
 The system checks the extracted text for common symptom-related keywords such as:
 
@@ -95,7 +95,7 @@ The system checks the extracted text for common symptom-related keywords such as
 
 It then provides general supportive information.
 
-6. 🥗 Supportive Food & Self-Care
+6.Supportive Food & Self-Care
 
 The application provides general suggestions such as:
 
@@ -106,7 +106,7 @@ The application provides general suggestions such as:
 - Following the doctor's prescription
 - Monitoring symptoms
 
-7. 📊 Automatic Visual Chart
+7. Automatic Visual Chart
 
 The application automatically generates a visual PNG chart containing:
 
@@ -116,7 +116,7 @@ This makes the information easier to understand visually.
 
 ---
 
-🛠️ Technologies Used
+ Technologies Used
 
 - Python
 - Streamlit
@@ -129,7 +129,7 @@ This makes the information easier to understand visually.
 
 ---
 
-📂 Project Structure
+ Project Structure
 
 AI-Prescription-Scanner/
 │
@@ -155,7 +155,7 @@ File| Purpose
 
 ---
 
-⚙️ Installation
+ Installation
 
 Clone the repository:
 
@@ -175,7 +175,7 @@ streamlit run app.py
 
 ---
 
-📦 Requirements
+ Requirements
 
 streamlit
 easyocr
@@ -186,7 +186,7 @@ pandas
 
 ---
 
-🎯 Future Enhancements
+ Future Enhancements
 
 - Better handwritten prescription recognition
 - Multi-language OCR support
@@ -200,7 +200,7 @@ pandas
 
 ---
 
-⚠️ Medical Disclaimer
+ Medical Disclaimer
 
 This project is intended for educational and informational purposes only.
 
@@ -218,7 +218,7 @@ The food and self-care section provides only general supportive guidance and sho
 
 ---
 
-👩‍💻 Author
+ Author
 
 Aswini S
 B.Sc. Computer Science with Artificial Intelligence
